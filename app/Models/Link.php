@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Str;
+use KyawKyawHtet\UrlFormatter\UrlFormatter;
+
 
 class Link extends Model
 {
@@ -30,13 +32,7 @@ class Link extends Model
 
     public static function setLinkAttribute($value)
     {
-        // Check if the link doesn't already start with 'http://' or 'https://'
-        if (!preg_match("~^(?:f|ht)tps?://~i", $value)) {
-            // If not, prepend 'https://' to the link
-            return 'https://' . $value;
-        } else {
-            // Otherwise, use the link as it is
-            return $value;
-        }
+        $urlFormatter = new UrlFormatter();
+        return $formattedUrl = $urlFormatter->format($value);
     }
 }

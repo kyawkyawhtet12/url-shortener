@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da9b7a1dc1dd923105198c572cc7df8d",
+    "content-hash": "7791c56acdd4597f2c7919fee9a175b8",
     "packages": [
         {
             "name": "brick/math",
@@ -1049,6 +1049,42 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "kyawkyawhtet/urlformatter",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kyawkyawhtet12/urlformatter.git",
+                "reference": "d07a07b98de51d69dfc6e1cbfd86327525c0dca3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kyawkyawhtet12/urlformatter/zipball/d07a07b98de51d69dfc6e1cbfd86327525c0dca3",
+                "reference": "d07a07b98de51d69dfc6e1cbfd86327525c0dca3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kyawkyawhtet\\Urlformatter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyaw Kyaw Htet",
+                    "email": "kyawhtet7675@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/kyawkyawhtet12/urlformatter/issues",
+                "source": "https://github.com/kyawkyawhtet12/urlformatter/tree/v1.0.0"
+            },
+            "time": "2024-05-03T18:03:42+00:00"
         },
         {
             "name": "laravel/framework",
