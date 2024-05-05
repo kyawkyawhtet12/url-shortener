@@ -47,7 +47,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "{{ route('url.short') }}",
+                    url: "{{ secure_url(route('url.short')) }}",
                     data: {
                         url: url
                     },
