@@ -15,7 +15,7 @@
     <div class="container mt-5">
         <h1 class="mb-4">URL Shortener</h1>
 
-        <form id="shortenForm" action="{{ route('url.short') }}" method="post">
+        <form id="shortenForm" action="{{ secure_url('url.short') }}" method="post">
             @csrf
             <div class="mb-3">
                 <label for="url" class="form-label">Enter URL:</label>
