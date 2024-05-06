@@ -25,6 +25,7 @@
         </form>
 
         <div id="result" class="mt-3"></div>
+        <button value="copy" class="btn btn-primary" onclick="copyToClipboard('result')">Copy!</button>
     </div>
 
     <!-- Bootstrap JS Bundle -->
@@ -44,7 +45,7 @@
         $(document).ready(function() {
             $('#shortenBtn').click(function() {
                 var url = $('#url').val();
-
+                var APP_URL = {!! json_encode(url('/')) !!}
                 $.ajax({
                     type: "POST",
                     url: "{{ secure_url(route('url.short')) }}",
@@ -53,8 +54,9 @@
                     },
                     success: function(response) {
                         console.log(response)
-                        $('#result').html('<p>Shortened URL: <a href="' + response + '">' +
-                            response + '</a></p>');
+                        $('#result').html('<p><a href="' + APP_URL + response +
+                            '">' +
+                            APP_URL + response + '</a></p>');
                     },
                     error: function(xhr, status, error) {
                         $('#result').html('<p>Error: ' + xhr.responseText + '</p>');
@@ -62,6 +64,20 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        function copyToClipboard(id) {
+            var textToCopy = document.getElementById(id).innerText || document.getElementById(id).textContent;
+
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
     </script>
 </body>
 
