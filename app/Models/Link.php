@@ -32,7 +32,7 @@ class Link extends Model
 
     public static function setLinkAttribute($value)
     {
-        $urlFormatter = new UrlFormatter();
+        $urlFormatter = new \UrlFormatter();
         return $formattedUrl = $urlFormatter->format($value);
     }
 }
