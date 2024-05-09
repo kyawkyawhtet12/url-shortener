@@ -54,9 +54,9 @@
                     },
                     success: function(response) {
                         console.log(response)
-                        $('#result').html('<p><a href="' + APP_URL + response +
+                        $('#result').html('<p><a href="' + response +
                             '">' +
-                            APP_URL + response + '</a></p>');
+                            response + '</a></p>');
                     },
                     error: function(xhr, status, error) {
                         $('#result').html('<p>Error: ' + xhr.responseText + '</p>');
