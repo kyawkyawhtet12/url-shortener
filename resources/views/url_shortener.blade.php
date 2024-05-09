@@ -37,7 +37,12 @@
     <script type="text/javascript">
         $.ajaxSetup({
             headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                "accept": "application/json",
+                "Access-Control-Allow-Headers": "x-requested-with",
+                'Access-Control-Allow-Credentials': ' true',
+                'Access-Control-Allow-Origin': '*'
+
             }
         });
     </script>
@@ -48,7 +53,7 @@
                 var APP_URL = {!! json_encode(url('/')) !!}
                 $.ajax({
                     type: "POST",
-                    url: "{{ secure_url(route('url.short')) }}",
+                    url: "{{ route('url.short') }}",
                     data: {
                         url: url
                     },
