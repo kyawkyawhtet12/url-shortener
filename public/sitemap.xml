@@ -1,15 +1,14 @@
 <?php
 // Generate the URL and timestamp for the homepage
 $url_home = url('/');
-$timestamp_now = \Carbon\Carbon::now()->tz('UTC')->toAtomString();?>
+$timestamp_now = \Carbon\Carbon::now()->tz('UTC')->toAtomString();
+?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage -->
     <url>
-        <loc>
-            <?= $url_home?></loc>
-        <lastmod>
-            <?= $timestamp_now?></lastmod>
+        <loc><?= $url_home ?></loc>
+        <lastmod><?= $timestamp_now ?></lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
