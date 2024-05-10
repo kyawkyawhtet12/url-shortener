@@ -9,7 +9,7 @@
     <!-- Meta tags for SEO -->
     <meta name="description" content="Free URL Shortener - Shorten your URLs and track their clicks.">
     <meta name="keywords" content="URL shortener, shorten URL, link shortener">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Blue Cat">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
