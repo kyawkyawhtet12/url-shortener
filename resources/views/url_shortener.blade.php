@@ -42,6 +42,17 @@
             }
         });
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y80B08R3W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4Y80B08R3W');
+    </script>
     <script>
         $(document).ready(function() {
             $('#shortenBtn').click(function() {
