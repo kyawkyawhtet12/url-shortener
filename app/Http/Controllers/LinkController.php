@@ -13,7 +13,7 @@ class LinkController extends Controller
     {
         $shorten_url = Link::shortenUrl($request->url);
 
-        return $shorten_url;
+        return $shorten_url->code;
     }
 
     public function redirectUrl(Request $request)
