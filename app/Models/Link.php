@@ -27,7 +27,7 @@ class Link extends Model
         $link->shorten_url = env('APP_URL'). '/' . $code;
         $link->save();
 
-        return $link->shorten_url;
+        return $link;
     }
 
     public static function setLinkAttribute($value)
