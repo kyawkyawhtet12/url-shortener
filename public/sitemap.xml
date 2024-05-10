@@ -1,7 +1,9 @@
 <?php
-    $url = url('/');
-    $timestamp = \Carbon\Carbon::now()->tz('UTC')->toAtomString();
+// Generate the URL and timestamp before outputting them into the XML file
+$url = url('/');
+$timestamp = \Carbon\Carbon::now()->tz('UTC')->toAtomString();
 ?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage -->
     <url>
@@ -11,4 +13,27 @@
         <priority>1.0</priority>
     </url>
 
+    <!-- Other pages -->
+    <!-- Add more <url> entries for each page on your website -->
+    <!-- Example:
+    <url>
+        <loc><?= url('/about') ?></loc>
+        <lastmod><?= \Carbon\Carbon::now()->tz('UTC')->toAtomString() ?></lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    -->
+
+    <!-- Dynamic pages -->
+    <!-- You can dynamically generate <url> entries for dynamic content -->
+    <!-- Example:
+    <?php foreach($posts as $post): ?>
+    <url>
+        <loc><?= url('/post/' . $post->id) ?></loc>
+        <lastmod><?= $post->updated_at->tz('UTC')->toAtomString() ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <?php endforeach; ?>
+    -->
 </urlset>
