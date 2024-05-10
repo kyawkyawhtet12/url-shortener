@@ -53,7 +53,7 @@
                         url: url
                     },
                     success: function(response) {
-                        var fullUrl = APP_URL + response;
+                        var fullUrl = APP_URL + '/' + response;
                         console.log(response)
                         $('#result').html('<p><a href="' + fullUrl + '">' + fullUrl +
                             '</a></p>');
