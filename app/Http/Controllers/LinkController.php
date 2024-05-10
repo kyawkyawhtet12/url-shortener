@@ -11,9 +11,7 @@ class LinkController extends Controller
 {
     public function shortUrl(Request $request)
     {
-        $shorten_url = Link::shortenUrl($request->url);
-
-        return $shorten_url->code;
+        return Link::shortenUrl($request->url);
     }
 
     public function redirectUrl(Request $request)
