@@ -39,7 +39,6 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} "cd /var/www/html/url-shortener/ &&
           sudo su -c 'git pull' &&
           sudo chmod -R 777 storage && 
-          composer install --no-dev &&
           php artisan migrate --force &&
           php artisan optimize"
 
