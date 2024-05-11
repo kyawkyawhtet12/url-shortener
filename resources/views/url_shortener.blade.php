@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7467068,document.body||document.documentElement)</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
@@ -98,12 +99,6 @@
             document.execCommand("copy");
             document.body.removeChild(tempInput);
         }
-    </script>
-    <script>
-        (function(s, u, z, p) {
-            s.src = u, s.setAttribute('data-zone', z), p.appendChild(s);
-        })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7467068, document.body || document
-            .documentElement)
     </script>
 </body>
 
