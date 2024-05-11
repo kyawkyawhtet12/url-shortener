@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page will Redirect after 5 seconds</title>
+    <title>Page will Redirect after 10 seconds</title>
 </head>
 <body>
     <div id="countdown"></div>
@@ -16,7 +16,7 @@
     <script>
         // Countdown function
         function countdown() {
-            var seconds = 5;
+            var seconds = 10;
             var countdownElement = document.getElementById('countdown');
             countdownElement.innerText = 'Redirecting in ' + seconds + ' seconds...';
 
