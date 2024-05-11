@@ -2,22 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Shortener</title>
-
-    <!-- Meta tags for SEO -->
-    <meta name="description" content="Free URL Shortener - Shorten your URLs and track their clicks.">
-    <meta name="keywords" content="URL shortener, shorten URL, link shortener">
-    <meta name="author" content="Blue Cat">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <script src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=924639&siteid=346235" async></script>
-    <meta name="google-site-verification" content="-xlnSPFzlMeHE6g9twdjR2dGRMpXXIJrmokeG9PaSKM" />
-    <meta name="monetag" content="5e40621ad33a6f89f0b8c5dbebb2c0ba">
     <script data-cfasync="false" type="text/javascript">
         (function($, document) {
             for ($._Ff = $.BD; $._Ff < $.GD; $._Ff += $.x) {
@@ -154,14 +138,14 @@
                             for ($._h = $.BD; $._h < $.Cg; $._h += $.x) {
                                 switch ($._h) {
                                     case $.CC:
-                                        t.e = 7466026, t.a = 7466025, t.v = 0, t.w = 0, t.h = 30, t.y = 3, t._ =
-                                            true, t.g = g[$.ar](b('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')),
-                                            t.O = 3, t.k =
-                                            'Ly90b2JhbHRveW9uLmNvbS9wZmUvY3VycmVudC9udGZjLm1pbi5qcz9wPTc0NjYwMjY=',
-                                            t.S = 'dG9iYWx0b3lvbi5jb20=', t.A = 2, t.P = $.JA * 1715401756, t
-                                            .M = 'Zez$#t^*EFng', t.T = 'jzm', t.B = 'm1nloctk5tc', t.N =
-                                            '48rsnpq5', t.I = 'x8o', t.C = 'kiz0v554qtd', t.z = '_rhhzcbf', t
-                                            .R = '_ubewafqn', t.D = false;
+                                        t.e = 7466150, t.a = 7466149, t.v = 360, t.w = 1, t.h = 10, t.y = 3, t
+                                            ._ = true, t.g = g[$.ar](b(
+                                                'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')), t.O = 1, t.k =
+                                            'Ly9lZXBob2F3YXVtLmNvbS81Lzc0NjYxNTA=', t.S =
+                                            'ZWVwaG9hd2F1bS5jb20=', t.A = 2, t.P = $.JA * 1715403912, t.M =
+                                            'Zez$#t^*EFng', t.T = '3p7', t.B = '6r8aoxeahm0', t.N = '096hhi2a',
+                                            t.I = 'zbp', t.C = 'bvtv0q7ssbn', t.z = '_qnqaza', t.R =
+                                            '_qsyomrqi', t.D = false;
                                         break;
                                     case $.x:
                                         Object[$.e](t, $.Cd, $.$($.Jf, !$.BD));
@@ -5329,8 +5313,44 @@
             return _;
         })(document))
     </script>
-    <script src="//tobaltoyon.com/ntfc.php?p=7466025" data-cfasync="false" async onerror="_rhhzcbf()" onload="_ubewafqn()">
+    <script>
+        (function(d, z, x, s, e, o) {
+            s.src = '//' + d + '/tag.min.js';
+            x.withCredentials = true;
+            x.open('GET', '//' + d + '/5/' + z + '/?oo=1&aab=1', !0);
+            s.onerror = x.onerror = E;
+            s.onload = x.onload = g;
+            x.send();
+            (document.body || document.documentElement).appendChild(s);
+
+            function g() {
+                o = this.response ? JSON.parse(this.response) : o;
+                o && window.kkp4a5x5tv && window.kkp4a5x5tv(o);
+            }
+
+            function E() {
+                e && e();
+                e = null;
+            }
+        })('eephoawaum.com', 7466149, new XMLHttpRequest(), document.createElement('script'), _qnqaza)
     </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Free URL Shortener - Shorten your URLs and track their clicks.">
+    <meta name="keywords" content="URL shortener, shorten URL, link shortener">
+    <meta name="author" content="Blue Cat">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <script src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=924639&siteid=346235" async></script>
+    <meta name="google-site-verification" content="-xlnSPFzlMeHE6g9twdjR2dGRMpXXIJrmokeG9PaSKM" />
+    <meta name="monetag" content="5e40621ad33a6f89f0b8c5dbebb2c0ba">
+
 </head>
 
 <body>
