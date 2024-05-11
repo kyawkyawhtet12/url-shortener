@@ -27,10 +27,16 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
+          PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
 
       - name: Deploy to AWS EC2
+        env:
+          PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
+          HOSTNAME: ${{ secrets.AWS_INSTANCE_IP }}
+          USER_NAME: ${{ secrets.AWS_USER_NAME }}
         run: |
-          ssh ${{ secrets.AWS_INSTANCE_IP }} "cd /var/www/html/url-shortener/ &&
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} "cd /var/www/html/url-shortener/ &&
           git pull &&
           composer install --no-dev &&
           php artisan migrate --force &&
