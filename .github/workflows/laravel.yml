@@ -40,7 +40,7 @@ jobs:
           sudo su -c 'git pull' &&
           php artisan cache:clear
           sudo chmod -R 775 storage &&
-          composer install
+          composer install &&
           php artisan migrate --force &&
           php artisan optimize"
 
