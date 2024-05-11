@@ -38,8 +38,8 @@ jobs:
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} "cd /var/www/html/url-shortener/ &&
           sudo su -c 'git pull' &&
-          composer install
           sudo chmod -R 777 storage &&
+          composer install
           php artisan migrate --force &&
           php artisan optimize"
 
