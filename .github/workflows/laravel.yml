@@ -41,6 +41,7 @@ jobs:
           php artisan cache:clear
           sudo chmod -R 775 storage &&
           composer install &&
+          php artisan storage:link
           php artisan migrate --force &&
           php artisan optimize"
 
