@@ -3,7 +3,7 @@
 
 <head>
     <script src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=924639&siteid=346262" async></script>
-    <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7467068,document.body||document.documentElement)</script>
+    {{-- <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7467068,document.body||document.documentElement)</script> --}}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
