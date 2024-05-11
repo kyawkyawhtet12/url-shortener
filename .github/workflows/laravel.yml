@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy to AWS EC2
         run: |
-          ssh ${{ secrets.AWS_INSTANCE_IP }} "cd /var/www/html/url-shortener &&
+          ssh ${{ secrets.AWS_INSTANCE_IP }} "cd /var/www/html &&
           git pull &&
           composer install --no-dev &&
           php artisan migrate --force &&
