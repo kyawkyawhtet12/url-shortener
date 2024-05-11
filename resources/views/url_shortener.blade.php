@@ -17,6 +17,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <script src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=924639&siteid=346235" async></script>
     <meta name="google-site-verification" content="-xlnSPFzlMeHE6g9twdjR2dGRMpXXIJrmokeG9PaSKM" />
+    <meta name="monetag" content="5e40621ad33a6f89f0b8c5dbebb2c0ba">
 </head>
 
 <body>
