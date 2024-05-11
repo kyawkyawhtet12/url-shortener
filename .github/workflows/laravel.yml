@@ -1,0 +1,44 @@
+name: Laravel Deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Install dependencies
+        run: composer install --no-dev
+
+      - name: Set up AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+          PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
+
+      - name: Deploy to AWS EC2
+        env:
+          PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
+          HOSTNAME: ${{ secrets.AWS_INSTANCE_IP }}
+          USER_NAME: ${{ secrets.AWS_USER_NAME }}
+        run: |
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} "cd /var/www/html/url-shortener/ &&
+          sudo su -c 'git pull' &&
+          sudo chmod -R 777 storage && 
+          php artisan migrate --force &&
+          php artisan optimize"
+
