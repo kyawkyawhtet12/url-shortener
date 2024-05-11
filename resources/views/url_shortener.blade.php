@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
-    <script src="https://richinfo.co/richpartners/pops/js/richads-pu-ob.js" data-pubid="924639" data-siteid="346261" async data-cfasync="false"></script>
+    {{-- <script src="https://richinfo.co/richpartners/pops/js/richads-pu-ob.js" data-pubid="924639" data-siteid="346261" async data-cfasync="false"></script> --}}
     <!-- Meta tags for SEO -->
     <meta name="description" content="Free URL Shortener - Shorten your URLs and track their clicks.">
     <meta name="keywords" content="URL shortener, shorten URL, link shortener">
