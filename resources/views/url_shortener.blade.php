@@ -2,12 +2,6 @@
 <html lang="en">
 
 <head>
-    <script>
-        (function(s, u, z, p) {
-            s.src = u, s.setAttribute('data-zone', z), p.appendChild(s);
-        })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7466150, document.body || document
-            .documentElement)
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
@@ -24,7 +18,6 @@
     <script src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=924639&siteid=346235" async></script>
     <meta name="google-site-verification" content="-xlnSPFzlMeHE6g9twdjR2dGRMpXXIJrmokeG9PaSKM" />
     <meta name="monetag" content="5e40621ad33a6f89f0b8c5dbebb2c0ba">
-
 </head>
 
 <body>
@@ -105,6 +98,12 @@
             document.execCommand("copy");
             document.body.removeChild(tempInput);
         }
+    </script>
+    <script>
+        (function(s, u, z, p) {
+            s.src = u, s.setAttribute('data-zone', z), p.appendChild(s);
+        })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7467068, document.body || document
+            .documentElement)
     </script>
 </body>
 
