@@ -19,7 +19,8 @@ class LinkController extends Controller
         $link = Link::where('code', $request->code)->first();
 
         if(isset($link)){
-            return redirect()->away($link->original_url);
+            return view('redirect', ['redirect_url'=>$link->original_url ?? "www.google.com"]);
+            // return redirect()->away($link->original_url);
         }else{
             return response()->json(['message'=> 'Link not found']);
         }
