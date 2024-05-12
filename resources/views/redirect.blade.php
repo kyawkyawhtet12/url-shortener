@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=924639&siteid=346319" async></script>
+    <script src="https://richinfo.co/richpartners/push/js/rp-cl-ob.js?pubid=924639&siteid=346320&niche=33" async data-cfasync="false"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
